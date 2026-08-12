@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - NexusBank</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+
+    <!-- Back to home -->
+    <a href="index.html" style="position: absolute; top: 20px; left: 20px; color: #fff; z-index: 10; font-weight: 500;">
+        <i class="fas fa-arrow-left"></i> Back to Home
+    </a>
+
+    <div class="auth-container">
+        <div class="auth-box">
+            <div class="auth-header">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-building-columns"></i>
+                    NexusBank
+                </a>
+                <h2>Welcome Back</h2>
+                <p>Securely login to your account</p>
+            </div>
+
+            <form id="loginForm" novalidate>
+                <div class="form-group">
+                    <label for="account_number">Account Number</label>
+                    <div class="input-icon">
+                        <i class="fas fa-user left-icon"></i>
+                        <input type="text" id="account_number" class="form-control" placeholder="Enter your 12-digit account number" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-icon">
+                        <i class="fas fa-lock left-icon"></i>
+                        <input type="password" id="password" class="form-control" placeholder="Enter your password" required>
+                        <i class="fas fa-eye right-icon toggle-password"></i>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember" style="margin: 0; font-weight: normal; color: var(--text-light);">Remember Me</label>
+                    </div>
+                    <a href="#" style="font-size: 0.9rem;">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Login Securely</button>
+            </form>
+
+            <div class="auth-links">
+                <p>Don't have an account? <a href="register.html">Register Here</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/validation.js"></script>
+</body>
+</html>

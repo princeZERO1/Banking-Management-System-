@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusBank - Modern Banking Management</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-building-columns"></i>
+                NexusBank
+            </a>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="register.html" class="btn btn-primary">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Banking made simple,<br>secure, and modern.</h1>
+                <p>Manage your finances with ease. Experience next-generation digital banking with NexusBank. Open an account today and take control of your financial future.</p>
+                <a href="register.html" class="btn btn-primary" style="padding: 15px 30px; font-size: 1.1rem;">Get Started</a>
+                <a href="login.html" class="btn btn-outline" style="padding: 15px 30px; font-size: 1.1rem; color: #fff; border-color: #fff; margin-left: 10px;">Login to Account</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Banking Dashboard Mockup" style="border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / Why Choose Us -->
+    <section id="services" style="padding: 80px 0;">
+        <div class="container">
+            <h2 class="section-title">Why Choose NexusBank?</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <!-- Feature 1 -->
+                <div style="background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: center; transition: transform 0.3s;">
+                    <i class="fas fa-shield-halved" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h3>Secure Banking</h3>
+                    <p style="color: var(--text-light);">State-of-the-art encryption ensures your data and funds are always protected against unauthorized access.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div style="background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: center; transition: transform 0.3s;">
+                    <i class="fas fa-mobile-screen-button" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h3>Digital Access</h3>
+                    <p style="color: var(--text-light);">Access your account anytime, anywhere from your desktop, tablet, or mobile device seamlessly.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div style="background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: center; transition: transform 0.3s;">
+                    <i class="fas fa-money-bill-transfer" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h3>Instant Transfers</h3>
+                    <p style="color: var(--text-light);">Send and receive money globally with zero delays. Real-time processing for your peace of mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section style="background-color: var(--primary-color); padding: 60px 0; color: #fff; text-align: center;">
+        <div class="container">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 30px;">
+                <div>
+                    <h2 style="color: #fff; font-size: 3rem; margin-bottom: 5px;">2M+</h2>
+                    <p style="color: var(--accent-color);">Happy Customers</p>
+                </div>
+                <div>
+                    <h2 style="color: #fff; font-size: 3rem; margin-bottom: 5px;">$5B+</h2>
+                    <p style="color: var(--accent-color);">Transactions Processed</p>
+                </div>
+                <div>
+                    <h2 style="color: #fff; font-size: 3rem; margin-bottom: 5px;">99.9%</h2>
+                    <p style="color: var(--accent-color);">Uptime Guarantee</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: #fff; margin-bottom: 20px; display: inline-block;">
+                        <i class="fas fa-building-columns"></i> NexusBank
+                    </a>
+                    <p style="color: var(--accent-color); margin-bottom: 20px;">Empowering your financial journey with innovative digital solutions and uncompromised security.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul style="color: var(--accent-color);">
+                        <li><i class="fas fa-map-marker-alt" style="width: 25px;"></i> 123 Finance Street, NY 10001</li>
+                        <li><i class="fas fa-phone" style="width: 25px;"></i> +1 (800) 123-4567</li>
+                        <li><i class="fas fa-envelope" style="width: 25px;"></i> support@nexusbank.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NexusBank. All Rights Reserved. Designed for C Backend Integration.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

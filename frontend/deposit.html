@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit Funds - NexusBank</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body class="dashboard-body">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <a href="dashboard.html" class="logo">
+                <i class="fas fa-building-columns"></i>
+                NexusBank
+            </a>
+        </div>
+        <nav class="sidebar-menu">
+            <ul>
+                <li><a href="dashboard.html"><i class="fas fa-house"></i> Dashboard</a></li>
+                <li><a href="deposit.html" class="active"><i class="fas fa-money-bill-wave"></i> Deposit</a></li>
+                <li><a href="withdraw.html"><i class="fas fa-money-bill-transfer"></i> Withdraw</a></li>
+                <li><a href="transfer.html"><i class="fas fa-exchange-alt"></i> Transfer</a></li>
+                <li><a href="balance.html"><i class="fas fa-wallet"></i> Balance Inquiry</a></li>
+                <li><a href="history.html"><i class="fas fa-list"></i> Transaction History</a></li>
+                <li><a href="profile.html"><i class="fas fa-user-gear"></i> Profile</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Topbar -->
+        <header class="topbar">
+            <div class="toggle-btn" id="sidebarToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="topbar-right">
+                <div class="user-profile" onclick="window.location.href='profile.html'">
+                    <img src="https://ui-avatars.com/api/?name=John+Doe&background=0D8ABC&color=fff" alt="User">
+                    <span>John Doe</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content Area -->
+        <div class="dashboard-container">
+            <div class="page-header">
+                <h2>Deposit Funds</h2>
+            </div>
+
+            <div class="glass-card" style="max-width: 600px; margin: 0 auto;">
+                <form id="depositForm" class="dashboard-action-form" novalidate>
+                    
+                    <div class="form-group">
+                        <label for="accNumberDisplay">Account Number</label>
+                        <div class="input-icon">
+                            <i class="fas fa-user left-icon"></i>
+                            <input type="text" id="accNumberDisplay" class="form-control" readonly style="background: #f4f4f4; cursor: not-allowed;">
+                        </div>
+                        <small style="color: var(--text-light);">Account number is auto-filled for security.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="depositAmount">Amount to Deposit ($)</label>
+                        <div class="input-icon">
+                            <i class="fas fa-dollar-sign left-icon"></i>
+                            <input type="number" id="depositAmount" class="form-control" placeholder="Enter amount" min="1" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="remarks">Remarks (Optional)</label>
+                        <div class="input-icon">
+                            <i class="fas fa-pen left-icon"></i>
+                            <input type="text" id="remarks" class="form-control" placeholder="e.g. Salary, Rent">
+                        </div>
+                    </div>
+
+                    <div class="form-group btn-group" style="margin-top: 30px;">
+                        <button type="reset" class="btn btn-outline" style="flex: 1;">Reset</button>
+                        <button type="submit" class="btn btn-primary" style="flex: 2;">Deposit Funds</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/validation.js"></script>
+</body>
+</html>

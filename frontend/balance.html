@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance Inquiry - NexusBank</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body class="dashboard-body">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <a href="dashboard.html" class="logo">
+                <i class="fas fa-building-columns"></i>
+                NexusBank
+            </a>
+        </div>
+        <nav class="sidebar-menu">
+            <ul>
+                <li><a href="dashboard.html"><i class="fas fa-house"></i> Dashboard</a></li>
+                <li><a href="deposit.html"><i class="fas fa-money-bill-wave"></i> Deposit</a></li>
+                <li><a href="withdraw.html"><i class="fas fa-money-bill-transfer"></i> Withdraw</a></li>
+                <li><a href="transfer.html"><i class="fas fa-exchange-alt"></i> Transfer</a></li>
+                <li><a href="balance.html" class="active"><i class="fas fa-wallet"></i> Balance Inquiry</a></li>
+                <li><a href="history.html"><i class="fas fa-list"></i> Transaction History</a></li>
+                <li><a href="profile.html"><i class="fas fa-user-gear"></i> Profile</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Topbar -->
+        <header class="topbar">
+            <div class="toggle-btn" id="sidebarToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="topbar-right">
+                <div class="user-profile" onclick="window.location.href='profile.html'">
+                    <img src="https://ui-avatars.com/api/?name=John+Doe&background=0D8ABC&color=fff" alt="User">
+                    <span>John Doe</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content Area -->
+        <div class="dashboard-container">
+            <div class="page-header">
+                <h2>Balance Inquiry</h2>
+            </div>
+
+            <div class="glass-card" style="max-width: 600px; margin: 0 auto; text-align: center; padding: 40px 20px;">
+                
+                <i class="fas fa-wallet" style="font-size: 4rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                
+                <h3 style="color: var(--text-dark); margin-bottom: 5px;">John Doe</h3>
+                <p style="color: var(--text-light); margin-bottom: 30px;">Account Number: 1000 1234 5678 (Savings)</p>
+                
+                <div style="background: #f8f9fa; border-radius: var(--border-radius); padding: 30px; margin-bottom: 30px; border: 1px solid #eee;">
+                    <p style="color: var(--text-light); font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Available Balance</p>
+                    <h1 style="color: var(--success); font-size: 3.5rem; margin: 0;">&#8377; 12,450.00</h1>
+                </div>
+
+                <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 20px;">Last Updated: <span id="lastUpdated">Today at 10:45 AM</span></p>
+
+                <button class="btn btn-primary" onclick="window.refreshBalance()" style="width: 200px;">
+                    <i class="fas fa-sync-alt" id="syncIcon"></i> Refresh Balance
+                </button>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
